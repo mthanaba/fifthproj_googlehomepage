@@ -9,6 +9,7 @@
         <!--Stylesheets -->
         <link href="css-styles/reset.css" rel="stylesheet">
         <link href="css-styles/main.css" rel="stylesheet"  >
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap" rel="stylesheet">
 
     </head>
     <header>
@@ -16,13 +17,14 @@
         <div class="top-navbar">
             <!--Top Navbar-->
             <ul class="top-navbar-list">
-                <li>About</li>
-                <li>Store</li>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li><img class="grid-picture-width" src="https://cdn.powermockup.com/wireframe-and-mockup-shapes/android-5-phone/components/grid-list-3x3-preview.jpg"
-                    alt="Grapefruit slice atop a pile of other slices"></li>
-                <li>Sign in</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li style="float: right;"><button class="signin-link" type="button">Sign in</button></li>
+                <li style="float: right;"><a href="#"><img class="grid-picture-width" src="https://cdn.onlinewebfonts.com/svg/img_63957.png"
+                    alt="3x3 grey android grid"></a></li>
+                <!--<li style="float: right;"><a class="Google_Grid" href="#"></a></li>-->
+                <li style="float: right;"><a href="#">Images</a></li>
+                <li style="float: right;"><a href="#">Gmail</a></li>
             </ul>
             
         </div>
@@ -39,15 +41,17 @@
         <form class= "search-form-components">
              <!--Text Input Form-->
              <div class ="input-text">
+                <div><img class="mag_sym" src="https://cdn1.iconfinder.com/data/icons/modern-flat-app-gui-1/50/Search-512.png"></div>
                 <input type ="text" class="search-text-input">
+                <div><img class="speak_sym" src="https://web.archive.org/web/20191130234609im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"></div>
              </div>
-            
+             
             <!--Search Buttons-->
             <div class ="search-buttons">
-                <button class="gsearch-form-button" type="button" >
+                <button class="individual-search-button" type="button" >
                     Google Search
                 </button>
-                <button class="luckysearch-form-button" type="button" >
+                <button class="individual-search-button" type="button" >
                     I'm Feeling Lucky
                 </button>
             </div> 
@@ -58,12 +62,12 @@
         <div class="bottom-navbar">
             <!--Bottom Navbar-->
             <ul class="bottom-navbar-list">
-                <li>Advertising</li>
-                <li>Business</li>
-                <li>How Search Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+                <li style="float: right;"><a href="#">Settings</a></li>
+                <li style="float: right;"><a href="#">Terms</a></li>
+                <li style="float: right;"><a href="#">Privacy</a></li>
             </ul>
             
         </div>

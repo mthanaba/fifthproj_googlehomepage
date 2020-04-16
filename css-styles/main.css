@@ -1,28 +1,123 @@
+/* Configuring horizontal top & bottom navbars*/
+ul{
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+li{
+  float: left;
+  margin: 0 10px 0 10px;
+}
+
+li a{
+  display:block;
+  color:black;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
+  font-size:12px;
+  font-family: 'Manrope', sans-serif;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
+/*end of common configuring of navbars*/
+
+/*Configuring top navbar list items*/
+.top-navbar-list{
+  top:0;
+}
+
+.signin-link{
+  display: block;
+  color: white;
+  background-color: rgba(0, 68, 255, 0.692);
+  border: none;
+  text-align: center;
+  border-radius: 2px;
+  margin-top: 15px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 12px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.Google_Grid{
+  background-origin: padding-box;
+  background-position: -132px -38px;
+  background-image: url('//web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+  background-size: 528px 68px;
+  display: inline-block;
+  opacity: .55;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  opacity: .55;
+
+}
+.grid-picture-width{
+  display:block;
+  width: 15px;
+  height: 15px;
+  opacity: 0.30;
+  
+}
+
+/*end of  configuring of navbars*/
+
+
+/* body positioning*/
+.google-image{
+  margin-top:150px;
+}
 .googleimage-picture-width{
     display: block;
     margin-left: auto;
     margin-right: auto;
   
   }
-  .search-form-components{
+.search-form-components{
     width: auto;
     margin:auto;
     padding:10px;
   }
   /*text input container*/
   .input-text{
-    width:auto;
-    padding:10px;
+    margin-top: 5px;
+    width: 600px;;
+    padding:0;
     margin:auto;
     display:flex;
     justify-content: center;
-  }
-  /*text input element*/
+    border: thin solid rgb(184, 180, 180);
+    border-radius: 30px;
+    
+    }
+    .mag_sym{
+      width: 35px;
+      height: 35px;
+      opacity: .25;
+      
+    }
   
-  .search-text-input{
-    width:500px;
+    /*text input element*/
+    .search-text-input{
+      width:500px;
+      border: none;
+    }
+
+  .speak_sym{
+    display: inline-block;
+    vertical-align: center;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
   
-  }
+  } 
+  /*search button container*/
   .search-buttons{
     margin: auto;
     width: auto;
@@ -31,11 +126,18 @@
     display:flex;
     justify-content:center;
   }
-  .gsearch-form-button{
-    margin-right:5px;
-  }
-    
-  .luckysearch-form-button{
-    margin-left:5px;
-    color:red;
+  /*individual search buttons*/
+  .individual-search-button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin:5px;
+    font-family: 'Manrope', sans-serif;
+
+  } 
+
+  .bottom-navbar-list{
+    /*Fixing bottom navbar to bottom*/
+    bottom:0px;
+    background-color: rgb(236, 231, 231);
   }
